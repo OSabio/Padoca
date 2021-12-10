@@ -3,12 +3,12 @@ import React, {
   useContext,
   createContext,
   useEffect,
-  useMemo
+  useMemo,
 } from "react";
 
 import {
   restaurantsRequest,
-  restaurantsTransform
+  restaurantsTransform,
 } from "./restaurants.service";
 
 import { LocationContext } from "../location/location.context";
@@ -50,7 +50,7 @@ export const RestaurantsContextProvider = ({ children }) => {
       value={{
         restaurants,
         isLoading,
-        error
+        error,
       }}
     >
       {children}
