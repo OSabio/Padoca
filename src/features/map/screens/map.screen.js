@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
+import { TouchableOpacity } from "react-native";
 import MapView from "react-native-maps";
 import styled from "styled-components/native";
 
@@ -13,7 +14,7 @@ const Map = styled(MapView)`
   width: 100%;
 `;
 
-export const MapScreen = () => {
+export const MapScreen = ({ navigation }) => {
   const { location } = useContext(LocationContext);
   const { restaurants = [] } = useContext(RestaurantsContext);
 
@@ -48,8 +49,14 @@ export const MapScreen = () => {
                 longitude: restaurant.geometry.location.lng,
               }}
             >
-              <MapView.Callout>
-                <MapCallout restaurant={restaurant} />
+              <MapView.Callout
+                onPress={() =>
+                  navigation.navigate("PadariaDetail", { restaurant })
+                }
+              >
+                <TouchableOpacity>
+                  <MapCallout restaurant={restaurant} />
+                </TouchableOpacity>
               </MapView.Callout>
             </MapView.Marker>
           );
