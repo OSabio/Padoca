@@ -3,6 +3,7 @@ export const colors = {
     primary: "#2182BD",
     secondary: "#5282BD",
     muted: "#C6DAF7",
+    button: "#D5F2B8",
   },
   ui: {
     primary: "#262626",
@@ -22,7 +23,7 @@ export const colors = {
     secondary: "#757575",
     disabled: "#9C9C9C",
     inverse: "#FFFFFF",
-    error: "#D0421B",
+    error: "#E8C1C1",
     success: "#138000",
   },
 };
