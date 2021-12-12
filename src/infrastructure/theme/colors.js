@@ -3,7 +3,7 @@ export const colors = {
     primary: "#2182BD",
     secondary: "#5282BD",
     muted: "#C6DAF7",
-    button: "#D5F2B8",
+    button: "#7FC6A4",
   },
   ui: {
     primary: "#262626",
@@ -17,6 +17,7 @@ export const colors = {
   bg: {
     primary: "#FFFFFF",
     secondary: "#F1F1F1",
+    tertiary: "#AF4B3C",
   },
   text: {
     primary: "#262626",
